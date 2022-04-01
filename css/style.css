@@ -1,0 +1,357 @@
+*,
+::before,
+::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Spartan", sans-serif;
+}
+
+body {
+    font-family: "Spartan", sans-serif;
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.5;
+    height: 3000px;
+}
+
+.container {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* start navbar */
+
+.navbar {
+    display: flex;
+    background-color: rgb(43, 43, 43);
+    align-items: center;
+}
+
+.navbar i {
+    flex: 1;
+    font-size: 30px;
+    padding-left: 30px;
+    color: gold;
+}
+
+.navbar .tags {
+    padding: 10px;
+}
+
+.navbar .tags a {
+    padding: 10px 10px;
+    font-weight: 700;
+}
+
+.navbar .tags a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* End navbar */
+
+
+/* start header  */
+
+.header {
+    background-image: url("../images/shutterstock_654844426-1536x1024.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 60vw;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    color: white;
+}
+
+.header h1 {
+    font-weight: 400;
+}
+
+.header p {
+    font-weight: 400;
+}
+
+
+/* End header  */
+
+
+/* start plane */
+
+.plane-content .text {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.plane-content .text p:last-child {
+    font-weight: 500;
+    text-align: justify;
+}
+
+.card-content {
+    display: flex;
+    text-align: center;
+}
+
+.card-content .card {
+    padding: 0 30px;
+}
+
+
+/* end plane */
+
+
+/* start tour */
+
+.tour {
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+.tour-content {
+    text-align: center;
+}
+
+.tour-content .tickets {
+    text-align: left;
+    margin: 40px auto;
+    background-color: white;
+    color: black;
+}
+
+.tour-content .tickets p:last-child {
+    position: relative;
+    display: block;
+}
+
+.tour-content .tickets p:last-child::after {
+    content: "3";
+    position: absolute;
+    right: 30px;
+    top: 5px;
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+.tour-content .tickets p {
+    display: inline-block;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.tour-content .tickets hr {
+    margin: 0;
+}
+
+.tour-content .tickets span {
+    background-color: rgb(255, 78, 78);
+    padding: 5px;
+    color: white;
+    font-size: 13px;
+}
+
+.tour-content .cards {
+    display: flex;
+}
+
+.tour-content .card {
+    flex-basis: calc((100% - 30px) / 3);
+    background-color: white;
+    color: black;
+}
+
+.tour-content .card .text {
+    text-align: left;
+    padding: 20px;
+}
+
+.tour-content .card .text h6 {
+    font-size: 20px;
+}
+
+.tour-content .card .text p {
+    font-weight: 200;
+}
+
+.tour-content .card:nth-child(2) {
+    margin: 0 15px;
+}
+
+.tour-content .card button {
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+
+/* end tour */
+
+
+/* start contact */
+
+.contact-content {
+    text-align: center;
+}
+
+.contact-content .text {
+    display: flex;
+    text-align: left;
+}
+
+.contact-content .text .adress,
+.contact-content .text .cont {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.contact-content .text .adress p {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: calc((100% - 40px) / 2);
+    padding: 15px;
+    border-radius: 0;
+}
+
+input[type="email"] {
+    margin-left: 30px;
+}
+
+.contact-content input:nth-child(3) {
+    margin-top: 10px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    color: white;
+    background-color: black;
+    margin: 10px 0;
+}
+
+.supmit {
+    text-align: right;
+}
+
+.contact-content .text .cont .contact-content .text .cont input:last-child {
+    width: 100%;
+}
+
+
+/* end contact */
+
+
+/* start map */
+
+.map {
+    background-image: url("../images/af719c4b8ebe7aca797cf5f060b64fcc.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vw;
+}
+
+.footer {
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(253, 242, 228);
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+/* end map */
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    .card-content {
+        display: flex;
+        flex-flow: column;
+    }
+    .navbar {
+        display: flex;
+        flex-flow: column;
+    }
+    .tour-content .card {
+        margin: 15px 15px;
+    }
+    .tour-content .cards {
+        flex-flow: column;
+    }
+    .contact-content .text {
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+    }
+    .contact-content .text .supmit {
+        text-align: center;
+    }
+}
